@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<test thread-count="5" name="Test">
+		<parameter name="Browser" value="Chrome" />
+		<parameter name="Url"
+			value="https://www.qabible.in/payrollapp/site/login" />
+		<classes>
+			<class name="testScripts.LoginTest" />
+			<class name="testScripts.DashboardTest" />
+			<class name="testScripts.CompanyTest" />
+			<class name="testScripts.BranchTest" />
+			<class name="testScripts.DivisionTest" />
+			<class name="testScripts.ClientTest" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
